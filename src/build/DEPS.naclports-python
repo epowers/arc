@@ -7,4 +7,5 @@
 #       arc_welder/NOTICE needs to be updated to match.
 # Also note: This is now pointing to arc-build/naclports as we stripped the
 # x86_32 bits from the python.zip package (see README inside).
-gs://arc-build/naclports/builds/pepper_40/python.zip
+#gs://arc-build/naclports/builds/pepper_40/python.zip
+http://gsdview.appspot.com/naclports/builds/pepper_40/trunk-154-geacd680/publish/python/newlib/python.zip

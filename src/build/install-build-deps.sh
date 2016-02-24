@@ -15,14 +15,17 @@ fi
 arc_list="
 g++-arm-linux-gnueabihf
 gcc-arm-linux-gnueabihf
+g++
 gcc
 libc6-dev-i386
 libcap-dev:amd64
 libgl1-mesa-dev
 linux-libc-dev:i386
+make
 openjdk-7-jdk
 pbzip2
 pigz
+subversion
 unzip
 zip
 "
@@ -97,5 +100,8 @@ FORCE="-y"
 else
 FORCE=
 fi
+
+sudo dpkg --add-architecture i386
+sudo apt-get update
 sudo apt-get install --no-install-recommends $FORCE \
   ${arc_list} ${chrome32_list} ${nacl_list}
